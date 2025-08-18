@@ -1,9 +1,11 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"McDutchie"
+		]
 	},
-	"ep_padlist2_index_all-pads": "Alle Pads",
-	"ep_padlist2_list_heading": "Pads",
-	"ep_padlist2_list_page-title": "Pads",
-	"ep_padlist2_list_search-box.placeholder": "Doorzoek Pads"
+	"ep_padlist2_index_all-pads": "Alle notities",
+	"ep_padlist2_list_heading": "Notities",
+	"ep_padlist2_list_page-title": "Notities",
+	"ep_padlist2_list_search-box.placeholder": "Notities doorzoeken"
 }
