@@ -1,6 +1,6 @@
 ![Publish Status](https://github.com/ether/ep_padlist2/workflows/Node.js%20Package/badge.svg) [![Backend Tests Status](https://github.com/ether/ep_padlist2/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_padlist2/actions/workflows/test-and-release.yml)
 
-## ep_padlist2
+# Pad List / Index for Etherpad
 
 [Etherpad](https://etherpad.org/) plugin to display a list of all
 pads.
