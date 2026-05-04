@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ghose"
+			"Ghose",
+			"Toliño"
 		]
 	},
-	"ep_padlist2_index_all-pads": "Tódolos Pads",
-	"ep_padlist2_list_heading": "Pads",
-	"ep_padlist2_list_page-title": "Pads",
-	"ep_padlist2_list_search-box.placeholder": "Buscar pads"
+	"ep_padlist2_index_all-pads": "Tódolos documentos",
+	"ep_padlist2_list_heading": "Documentos",
+	"ep_padlist2_list_page-title": "Documentos",
+	"ep_padlist2_list_search-box.placeholder": "Buscar documentos"
 }
