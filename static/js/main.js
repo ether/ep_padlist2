@@ -27,11 +27,14 @@ const translateNode = (node, strings) => {
 };
 
 // The languages to try, most specific first: 'de-AT' also tries 'de', and
-// English is always the final fallback.
+// English is always the final fallback. Browsers report canonical casing
+// ('pt-BR', 'zh-Hans') while the locale index is keyed in lower case, so
+// normalize before looking anything up.
 const preferredLangs = () => {
   const langs = [];
-  for (const lang of (navigator.languages || [navigator.language])) {
-    if (!lang) continue;
+  for (const tag of (navigator.languages || [navigator.language])) {
+    if (!tag) continue;
+    const lang = tag.toLowerCase();
     langs.push(lang);
     if (lang.indexOf('-') > 0) langs.push(lang.split('-')[0]);
   }

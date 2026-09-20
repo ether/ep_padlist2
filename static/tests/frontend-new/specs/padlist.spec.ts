@@ -52,3 +52,16 @@ test.describe('ep_padlist2 /list', () => {
     await expect(page.locator('h1')).toHaveText('Pads');
   });
 });
+
+test.describe('ep_padlist2 /list in pt-BR', () => {
+  test.use({locale: 'pt-BR'});
+
+  test('uses the regional locale, not the base language', async ({page}) => {
+    // The browser reports "pt-BR" but the locale index is keyed "pt-br", so a
+    // case-sensitive lookup would silently fall back to "pt".
+    await page.goto(LIST_URL);
+    await expect(page.locator('input[type="search"]'))
+        .toHaveAttribute('placeholder', 'Pesquisar notas');
+    await expect(page.locator('h1')).toHaveText('Notas');
+  });
+});
